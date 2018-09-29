@@ -1,0 +1,383 @@
+body {
+font-family:"Roboto",sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.header-icon-wrapper {
+  float: left;
+}
+
+.header-icon-wrapper img {
+  display: inline-block;
+  float: left;
+}
+
+.header-icon {
+  margin-top: 15px;
+}
+
+.header-logo {
+  margin-top: 20px;
+}
+
+.header ul {
+  float: right;
+}
+
+.header li {
+  padding-top: 40px;
+  padding-left: 25px;
+  float: left;
+}
+
+.top-wrapper {
+  width: 100%;
+  height: 670px;
+  text-align: center;
+  background: url("../img/violet-mask_2x.png") no-repeat 50% 50%,url("../img/bg-top_2x.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.top-wrapper h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: black;
+  font-family :"Playfair Display", sans-serif;
+  letter-spacing: 1px;
+  padding-top: 230px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+/*以下で線を表示*/
+.top-wrapper h1:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 40px;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #09bab7;/*線の色*/
+  border-radius: 0px;/*線の丸み*/
+}
+
+.top-wrapper p {
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 25px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #09bab7;
+  padding: 14px;
+  margin-top: 50px;
+  border: 1px solid #09bab7;
+  border-radius: 2px;
+}
+
+.about-wrapper {
+  width: 100%;
+}
+
+.about-icon {
+  width: 235px;
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+
+.about-content {
+  padding-left: 100px;
+  display: inline-block;
+
+  /*
+  position: absolute;
+  top: 740px;
+  left: 40%;
+  */
+}
+
+.about-content h2 {
+  font-size: 22px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+
+.about-content p {
+  line-height: 25px;
+  color: #817f86;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.about-content a {
+  color: #09bab7;
+  padding: 15px;
+  border: 1px solid #09bab7;
+  border-radius: 1px;
+  display: inline-block;
+  margin-bottom: 70px;
+}
+
+.video{
+  background-color: black;
+  width: 100%;
+  height: 550px;
+  position:relative;
+  width:100%;
+}
+.video iframe{
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+}
+
+.expertise-wrapper {
+  width: 100%;
+}
+
+.expertise-title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-top: 70px;
+  margin-bottom: 1em;
+}
+
+/*以下で線を表示*/
+.expertise-title:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 60px;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #817f86;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+
+.expertise-title h2 {
+  font-size: 22px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.expertise-title p {
+  color: #817f86;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.content {
+  text-align: center;
+}
+
+.content-icon {
+  height: 50px;
+  line-height: 50px;
+}
+
+.content-icon img {
+  vertical-align: middle;
+}
+
+.content h3 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.content p {
+  color: #817f86;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.content-upper-stage {
+  padding-top: 80px;
+  -js-display: flex;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.content-downer-stage {
+  padding-top: 40px;
+  -js-display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-wrapper {
+  color: white;
+  width: 100%;
+  text-align: center;
+  background: url("../img/violet-mask_2x.png") no-repeat 50% 50%,url("../img/bg-introduce-member_2x.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.team-wrapper h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: "Playfair Display",sans-serif;
+  padding-top: 70px;
+}
+
+.team-wrapper p {
+  color: #c1c0c7;
+  font-size: 14px;
+  font-family: "Playfair Display",sans-serif;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  }
+
+  .team-wrapper-title {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+
+    /*以下で線を表示*/
+    .team-wrapper-title:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -15px;/*線の上下位置*/
+      display: inline-block;
+      width: 60px;/*線の長さ*/
+      height: 1px;/*線の太さ*/
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: #817f86;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+  }
+
+.members {
+  padding-top: 50px;
+  -js-display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduce-member {
+  border-bottom: 1px solid #817f86;
+}
+
+.introduce-member h3 {
+  padding-top: 15px;
+}
+
+.introduce-member p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.team-message p {
+  padding-top: 70px;
+}
+
+.team-message .btn {
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.works-wrapper {
+  width: 100%;
+}
+
+.works-header{
+  line-height: 160px;
+}
+
+.works-header h2{
+  font-family: "Playfair Display",sans-serif;
+  float: left;
+  display: inline-block;
+}
+
+.works-header a {
+  color: #5a5763;
+  float: right;
+  display: inline-block;
+}
+
+.works-header i {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.works-main {
+  width: 1280px;
+  height:400px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+
+.bg-1 {
+  background-color: #b6b6b6;
+}
+
+.bg-2 {
+  background-color: #acacac;
+}
+
+.bg-3 {
+  background-color: #a1a1a1;
+}
+
+.bg-4 {
+  background-color: #8a8a8a;
+}
